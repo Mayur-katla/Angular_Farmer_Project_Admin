@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+
+<div class="major_schemes_form">
+    <form action="/schemes" method="POST" [formGroup]="userSchemesValidation" (ngSubmit)="onSubmitSchemes()" enctype="multipart/form-data">
+        <h1>Schemes/Programs</h1>
+        <input type="text" name="name" formControlName="name" id="name" placeholder="Enter Name">
+        <br>
+        <textarea name="description" id="description" cols="30" rows="10" formControlName="description"
+            placeholder="Enter description"></textarea>
+        <br>
+        <input type="submit" name="schemes_submit" id="schemes_submit">
+    </form>
+</div>

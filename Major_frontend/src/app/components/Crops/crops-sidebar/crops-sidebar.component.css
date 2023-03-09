@@ -1,0 +1,44 @@
+.major_crops_sidebar {
+    /* background-color: darkgreen; */
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 80px;
+}
+
+.major_crops_sidebar_types {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 300px;
+}
+
+/* #label_crops {
+    position: relative;
+    left: 15%;
+    top: -11px;
+    font-size: 16px;
+    background-color: transparent;
+    background-color: white;
+    padding: 1px 10px;
+} */
+
+#rabi  {
+    width: 70%;
+    padding: 10px 20px;
+    margin: 0 20px;
+    outline: none;
+}
+
+#kharif  {
+    width: 70%;
+    padding: 10px 20px;
+    margin: 0 20px;
+    outline: none;
+}
+
+#zaid {
+    width: 70%;
+    padding: 10px 20px;
+    margin: 0 20px;
+    outline: none;
+}

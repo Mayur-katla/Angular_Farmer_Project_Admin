@@ -1,0 +1,17 @@
+<div class="major_crops_sidebar">
+    <div class="major_crops_sidebar_types">
+        <!-- <label for="">Rabi</label> -->
+        <select name="rabi" id="rabi">
+            <option value="select">-- Rabi Crops--</option>
+            <option value="details" *ngFor="let details of rabi_links" ><button routerLink="/Product">{{details.name}}</button></option>
+        </select>
+        <select name="kharif" id="kharif">
+            <option value="select">-- Kharif Crops--</option>
+            <option value="details" *ngFor="let details of kharif_links">{{details.name}}</option>
+        </select>
+        <select name="zaid" id="zaid">
+            <option value="select">-- Zaid Crops--</option>
+            <option value="details" *ngFor="let details of zaid_links">{{details.name}}</option>
+        </select>
+    </div>
+</div>

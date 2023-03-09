@@ -1,0 +1,50 @@
+.major_crops_home {
+    position: absolute;
+    top: 100%;
+    /* padding: 100px; */
+    background-color: #ccc;
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.major_crops_home h1 {
+    position: absolute;
+    left: 40%;
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 20px;
+}
+
+.major_crops_home input {
+    padding: 10px;
+    padding-right: 50px;
+    border: 1px solid darkgreen;
+    color: darkgreen;
+    outline: none;
+    position: relative;
+    top: 100px;
+    left: -20px;
+}
+
+#crop_submit {
+    color: white;
+    background-color: darkgreen;
+    width: 50%;
+    padding: 10px 25px;
+    border: 1px solid darkgreen;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    position: relative;
+    left: 35px;
+}
+
+#crop_submit:hover {
+    color: darkgreen;
+    background-color: white;
+}

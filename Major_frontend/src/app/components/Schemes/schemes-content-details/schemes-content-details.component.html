@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+<app-schemes-background></app-schemes-background>
+
+<div class="major_schemes_content_details" *ngFor="let details of schemes_details">
+    <h2>{{details.name}}</h2>
+    <br>
+    <p>{{details.description}}</p>
+</div>

@@ -1,0 +1,13 @@
+<div class="major_all_crops_list">
+    <a *ngFor="let details of crop_name_type" [routerLink]="['/Crops_details/',details.name]">{{details.name+" (" +
+        details.crop_type+")"}}</a>
+    <!-- <a href="#">(type)one</a>
+    <a href="#">(type)one</a>
+    <a href="#">(type)one</a>
+    <a href="#">(type)one</a>
+    <a href="#">(type)one</a>
+    <a href="#">(type)one</a>
+    <a href="#">(type)one</a>
+    <a href="#">(type)one</a>
+    <a href="#">(type)one</a> -->
+</div>

@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<div class="major_crops_details">
+    <div class="major_product_details_table">
+        <table>
+            <tr>
+                <th>No.</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>About</th>
+            <th>Climate</th>
+            <th>History</th>
+            <th>Soil</th>
+            <th>Nutrition</th>
+            <th>Fertilizer</th>
+            <th>Commercial</th>
+            <th>Delete</th>
+            </tr>
+            <tr *ngFor="let details of crops_details">
+                <td>{{details.id}}</td>
+                <td>{{details.name}}</td>
+                <td>{{details.crop_type}}</td>
+                <td>{{details.about}}</td>
+                <td>{{details.climate}}</td>
+                <td>{{details.history}}</td>
+                <td>{{details.soil}}</td>
+                <td>{{details.nutrition}}</td>
+                <td>{{details.fertilizer}}</td>
+                <td>{{details.commercial}}</td>
+                <!-- <td><form method="post" enctype="multipart/form-data" (ngSubmit)="userDelete()"><input type="submit" value="x" name="submit" [routerLink]="['/product_details/', details.product_name]" id="submit"></form></td> -->
+                <!-- <td><a href="" [routerLink]="['/product_details/']">x</a></td> -->
+                <td><button type="submit" (click)="cropDelete(details.name)">x</button></td>
+            </tr>
+        </table>
+    </div>
+</div>

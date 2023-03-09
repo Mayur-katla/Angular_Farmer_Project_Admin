@@ -1,0 +1,31 @@
+<div class="major_crops_content" *ngFor="let details of rabi_crops_details">
+    <h1>{{details.name}}</h1>
+    <div class="major_crops_content_about">
+        <h2>About the {{details.name}}</h2>
+        {{details.about}}
+    </div>
+    <div class="major_crops_content_climate">
+        <h2>Climate Requirement</h2>
+        {{details.climate}}
+    </div>
+    <div class="major_crops_content_history">
+        <h2>History of Hello</h2>
+        {{details.history}}
+    </div>
+    <div class="major_crops_content_soil">
+        <h2>Soil Management</h2>
+        {{details.soil}}
+    </div>
+    <div class="major_crops_content_nutrition">
+        <h2>Nutrition Management</h2>
+        {{details.nutrition}}
+    </div>
+    <div class="major_crops_content_fertilizer">
+        <h2>Fertilizer Requirement</h2>
+        {{details.fertilizer}}
+    </div>
+    <div class="major_crops_content_commercial">
+        <h2>Commercial Use</h2>
+        {{details.commercial}}
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+
+<div class="major_product_details">
+    <!-- <h1 class="text-white">Hello World!</h1> -->
+    <div class="major_product_details_table">
+        <table>
+            <tr>
+                <th>No.</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Delete</th>
+            </tr>
+            <tr *ngFor="let details of product_details">
+                <td>{{details.id}}</td>
+                <td>{{details.product_name}}</td>
+                <td>{{details.product_brand}}</td>
+                <td>{{details.product_price}}</td>
+                <td>{{details.product_type}}</td>
+                <td>{{details.product_description}}</td>
+                <!-- <td><form method="post" enctype="multipart/form-data" (ngSubmit)="userDelete()"><input type="submit" value="x" name="submit" [routerLink]="['/product_details/', details.product_name]" id="submit"></form></td> -->
+                <!-- <td><a href="" [routerLink]="['/product_details/']">x</a></td> -->
+                <td><button type="submit" (click)="productDelete(details.product_name)">x</button></td>
+            </tr>
+        </table>
+    </div>
+</div>

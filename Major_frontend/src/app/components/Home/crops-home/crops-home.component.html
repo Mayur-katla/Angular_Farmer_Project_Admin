@@ -1,0 +1,10 @@
+<div class="major_crops_home">
+    <h1>Find Crop Details</h1>
+    <form action="" method="post" enctype="multipart/form-data" (ngSubmit)="onSingleCropsDetails()" [formGroup]="userSingleCropsValidation" >
+        <input type="text" name="crop_name" id="crop_name" [(ngModel)]="crop_name"  formControlName="crop_name" placeholder="Crop Name">
+        <br><br>
+        <input type="submit"  name="crop_submit" [routerLink]="['/Crops_details/',crop_name]" id="crop_submit">
+    </form>
+</div>
+
+<!-- <app-product-home>  </app-product-home> -->

@@ -1,0 +1,21 @@
+<div class="major_message_form">
+    <h1>Commit Information</h1> 
+    <form action="" method="post" enctype="multipart/form-data" [formGroup]="userCommitValidation" (ngSubmit)="onCommitUser()">
+        <input type="name" name="name" id="name" placeholder="Enter Name" formControlName="name">
+        <br>
+        <input type="email" name="email" id="email" placeholder="Enter Email" formControlName="email">
+        <br>
+        <input type="number" name="insert" id="insert" placeholder="Number of Insert" formControlName="insert">
+        <br>
+        <select name="type" id="type" formControlName="type">
+            <option value="Crops">Crops</option>
+            <option value="Products">Products</option>
+            <option value="News">News</option>
+            <option value="Schemes">Schemes</option>
+        </select>
+        <br>
+        <textarea name="message" id="message" placeholder="Enter Message" cols="30" rows="5" formControlName="message"></textarea>
+        <br>
+        <input type="submit" name="submit" id="submit">
+    </form>
+</div>

@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<app-product-sidebar></app-product-sidebar>
+
+<div class="major_product_form">
+    <form action="/product" method="POST" [formGroup]="userProductValidation" (ngSubmit)="onSubmitProduct()" enctype="multipart/form-data">
+        <h1>Add product</h1>
+        <input type="text" name="product_name" formControlName="product_name" id="product_name" placeholder="Enter Name">
+        <br>
+        <input type="text" name="product_brand" id="product_brand" formControlName="product_brand" placeholder="Enter Brand">
+        <br>
+        <input type="text" name="product_price" id="product_price" placeholder="Enter price" formControlName="product_price">
+        <br>
+        <select name="product_type" id="product_type" formControlName="product_type">
+            <option value="Seeds">Seeds</option>
+            <option value="Foods">Foods</option>
+            <option value="Grains">Grains</option>
+            <option value="Machinery">Machinery</option>
+            <option value="Pesticides">Pesticides</option>
+        </select>
+        <br>
+        <textarea name="product_description" id="product_description" cols="30" rows="5" formControlName="product_description"
+            placeholder="Enter description"></textarea>
+        <br>
+        <input type="submit" name="product_submit" id="product_submit">
+    </form>
+</div>

@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<app-product-background></app-product-background>
+<app-product-sidebar></app-product-sidebar>
+
+<!-- <div class="major_product_foods">
+    <div *ngFor="let details of product_details_foods">
+        <p>Name : {{details.product_name}}</p>
+    </div>
+</div> -->
+
+<div class="major_product_foods">
+    <div class="major_product_content_main">
+        <a href="" *ngFor="let details of product_details_foods">
+            <img src="../../../../assets/Images/product_image/p5.png" alt="product_image" width="150" height="120">
+            <h3>{{details.product_name}}</h3>
+            <b>{{"$"+details.product_price}}</b>
+        </a>
+    </div>
+</div>
+
+<button routerLink="/Product_form" id="major_btn_add_product" >Add Product</button>

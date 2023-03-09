@@ -1,0 +1,16 @@
+<div class="major_product_content">
+    <!-- <div *ngFor="let details of product_details">
+        <p>Name: {{details.product_name}}</p>
+        <p>Price: {{details.product_price}}</p>
+        <p>Brand: {{details.product_brand}}</p>
+        <p>description :{{details.product_description}}</p>
+    </div> -->
+
+    <div class="major_product_content_main">
+        <a href="" *ngFor="let details of product_details">
+            <img src="../../../../assets/Images/product_image/p2.png" alt="product_image" width="150" height="120">
+            <h3>{{details.product_name}}</h3>
+            <b>{{"$"+details.product_price}}</b>
+        </a>
+    </div>
+</div>

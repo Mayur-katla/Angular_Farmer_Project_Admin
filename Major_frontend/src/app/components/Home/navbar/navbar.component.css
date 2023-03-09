@@ -1,0 +1,33 @@
+
+.major_navbar_content1 {
+    /* background-color: darkgreen; */
+    width: 100%;
+    padding: 30px 0px;
+    padding-right: 10px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    z-index: 10;
+    /* opacity: 0.5; */
+}
+
+.major_navbar_content1 a {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    transition-duration: 0.6s;
+}
+
+.major_navbar_content1 a:first-child {
+    margin-left: 300px;
+}
+
+.major_navbar_content1 a:hover {
+    background-color: white;
+    color: darkgreen;
+}

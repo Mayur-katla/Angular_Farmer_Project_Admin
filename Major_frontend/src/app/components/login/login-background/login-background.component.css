@@ -1,0 +1,25 @@
+/* .major_login_background {
+    background-color: #ccc;
+    width: 25%;
+    padding: 80px 20px;
+    
+    position: absolute;
+    left: 15%;
+    top: 12%;
+}
+
+.major_login_background_one img{
+    padding: 30px 20px;
+}
+
+.major_login_background_two img{
+    padding: 30px 20px;
+} */
+
+.major_login_background img {
+    width: 25%;
+    height: 68.3%;
+    position: absolute;
+    left: 22%;
+    top: 12%;
+}

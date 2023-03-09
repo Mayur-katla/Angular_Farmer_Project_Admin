@@ -1,0 +1,42 @@
+.major_crops_single {
+    background-color:white;
+    width: 70%;
+    height: 85%;
+    color: black;
+    position: relative;
+    /* top: 7%; */
+    left: 20%;
+    margin: 10px 80px;
+    overflow: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.major_crops_single h1 {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.major_crops_single_about {
+    padding: 10px 50px;
+}
+.major_crops_single_climate {
+    padding: 10px 50px;
+}
+.major_crops_single_history {
+    padding: 10px 50px;
+}
+.major_crops_single_nutrition {
+    padding: 10px 50px;
+}
+.major_crops_single_fertilizer {
+    padding: 10px 50px;
+}
+.major_crops_single_soil {
+    padding: 10px 50px;
+}
+.major_crops_single_commercial {
+    padding: 10px 50px;
+}

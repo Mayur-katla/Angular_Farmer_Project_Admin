@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<!-- <app-crops-sidebar></app-crops-sidebar> -->
+<app-all-crops-list></app-all-crops-list>
+<app-crops-background></app-crops-background>
+
+
+<div class="major_crops_single" *ngFor="let details of single_crop_details">
+    <h1>{{details.name}}</h1>
+    <div class="major_crops_single_about">
+        <h2>About the {{details.name}}</h2>
+        {{details.about}}
+    </div>
+    <div class="major_crops_single_climate">
+        <h2>Climate Requirement</h2>
+        {{details.climate}}
+    </div>
+    <div class="major_crops_single_history">
+        <h2>History of Hello</h2>
+        {{details.history}}
+    </div>
+    <div class="major_crops_single_soil">
+        <h2>Soil Management</h2>
+        {{details.soil}}
+    </div>
+    <div class="major_crops_single_nutrition">
+        <h2>Nutrition Management</h2>
+        {{details.nutrition}}
+    </div>
+    <div class="major_crops_single_fertilizer">
+        <h2>Fertilizer Requirement</h2>
+        {{details.fertilizer}}
+    </div>
+    <div class="major_crops_single_commercial">
+        <h2>Commercial Use</h2>
+        {{details.commercial}}
+    </div>
+</div>

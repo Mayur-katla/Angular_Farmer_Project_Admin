@@ -1,0 +1,88 @@
+.major_crops_form {
+    position: absolute;
+    top: 70px;
+    left: 10%;
+    background-color: white;
+    padding: 20px 50px;
+    width: 70%;
+    height: 77%;
+    overflow: scroll;
+}
+
+.major_crops_form h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.major_crops_form input {
+    width: 90%;
+    padding: 10px 20px;
+    padding-left: 10px;
+    margin: 10px 0;
+    font-weight: 15px;
+    outline: none;
+    color: #333;
+    border: 1px solid darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.major_crops_form input:first-child {
+    width: 40%;
+}
+
+.major_crops_form textarea {
+    width: 90%;
+    padding: 10px 20px;
+    padding-left: 10px;
+    margin: 10px 0;
+    font-weight: 15px;
+    outline: none;
+    color: #333;
+    border: 1px solid darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.major_crops_form input::placeholder {
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.major_crops_form textarea::placeholder {
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#crops_submit {
+    background-color: darkgreen !important;
+    width: 20%;
+    color: white;
+    border: 1px solid darkgreen;
+    position: relative;
+    left: 37%;
+    transition-duration: 0.6s;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#crops_submit:hover {
+    background-color: white !important;
+    color: darkgreen;
+}
+
+#crops_type {
+    /* position: relative;
+    top: -40px;
+    left: 40px; */
+    width: 30%;
+    padding: 5px;
+    margin: 7px;
+    margin-left: 0;
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}

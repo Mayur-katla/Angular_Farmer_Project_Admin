@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<app-crops-background></app-crops-background>
+<app-all-crops-list></app-all-crops-list>
+<div class="major_crops_form">
+    <div>
+        <h1>Crops Form</h1>
+        <form action="/Crops" method="post" enctype="multipart/form-data" [formGroup]="cropsValidation" (ngSubmit)="onCrops()">
+            <input type="text" name="crops_name" id="crops_name" placeholder="Crop Name" formControlName="crops_name">
+            <br>
+            <select name="crops_type" id="crops_type" formControlName="crops_type">
+                <option value="Rabi">Rabi</option>
+                <option value="Kharif">Kharif</option>
+                <option value="Zaid">Zaid</option>
+            </select>
+            <br>
+            <textarea name="crops_about" id="crops_about" cols="30" rows="5" placeholder="About Crop" formControlName="crops_about" ></textarea>
+            <br>
+            <textarea name="crops_climate" id="crops_climate" cols="30" rows="5" placeholder="Climate Crop" formControlName="crops_climate" ></textarea>
+            <br>
+            <textarea name="crops_history" id="crops_history" cols="30" rows="5" placeholder="History Crop" formControlName="crops_history"></textarea>
+            <br>
+            <textarea name="crops_soil" id="crops_soil" cols="30" rows="5" placeholder="Soil Crop" formControlName="crops_soil"></textarea>
+            <br>
+            <textarea name="crops_nutrition" id="crops_nutrition" cols="30" rows="5" placeholder="Nutrition Crop"  formControlName="crops_nutrition"></textarea>
+            <br>
+            <textarea name="crops_fertilizer" id="crops_fertilizer" cols="30" rows="5" placeholder="Fertilizer Crop"  formControlName="crops_fertilizer"></textarea>
+            <br>
+            <textarea name="crops_commercial" id="crops_commercial" cols="30" rows="5" placeholder="Commercial Crop"  formControlName="crops_commercial"></textarea>
+            <br>
+            <input type="submit" name="crops_submit" id="crops_submit">
+        </form>
+    </div>
+</div>
