@@ -1,3 +1,11 @@
 1. https://therichpost.com/angular-14-node-js-express-mysql-example-crud-app/ => curd operation in angular and nodejs 
 2. https://www.bezkoder.com/node-js-angular-13-jwt-auth/
 3. https://www.tutussfunny.com/nodejs-angular-with-mysql-crud-application/
+
+https://www.bezkoder.com/angular-12-jwt-auth/ => angular authetication.
+https://bezkoder.com/node-js-jwt-authentication-postgresql/ => nodejs and postgressql authetication.
+
+"username": "Mayur",
+"email" : "M123@gmail.com",
+"password": "12345678",
+"roles": ["users", "moderator"]
