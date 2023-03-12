@@ -46,7 +46,7 @@ app.get("/product", (req, res) => {
     pool.query(h1, [], (err, results) => {
         if (err) throw err;
         res.send({
-            message: "sucess get request product table",
+            message: "success get request product table",
             data: results.rows
         })
         console.log(results);
@@ -437,6 +437,184 @@ app.get("/single_schemes_details/:id", (req, res) => {
             data: results.rows
         })
         console.log(results.rows);
+    })
+})
+
+
+// count function admin crops, product, schemes
+
+app.get("/crops_count", (req, res) => {
+    console.log("get request Crops Counts table");
+
+    h1 = "select count(*) from crop";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request Crops Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+app.get("/crops_count_rabi", (req, res) => {
+    console.log("get request Crops Counts table");
+
+    h1 = "select count(*) from crop where crop_type = 'Rabi'";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request Crops Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+app.get("/crops_count_kharif", (req, res) => {
+    console.log("get request Crops Counts table");
+
+    h1 = "select count(*) from crop where crop_type = 'Kharif'";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request Crops Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+app.get("/crops_count_zaid", (req, res) => {
+    console.log("get request Crops Counts table");
+
+    h1 = "select count(*) from crop where crop_type = 'Zaid'";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request Crops Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+//product Count table count function 
+
+app.get("/product_count", (req, res) => {
+    console.log("get request product Counts table");
+
+    h1 = "select count(*) from product";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request product Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+
+app.get("/product_foods_count", (req, res) => {
+    console.log("get request product Counts table");
+
+    h1 = "select count(*) from product where product_type = 'Foods'";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request product Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+
+app.get("/product_grains_count", (req, res) => {
+    console.log("get request product Counts table");
+
+    h1 = "select count(*) from product where product_type = 'Grains'";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request product Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+
+app.get("/product_seeds_count", (req, res) => {
+    console.log("get request product Counts table");
+
+    h1 = "select count(*) from product where product_type = 'Seeds'";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request product Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+
+app.get("/product_machinery_count", (req, res) => {
+    console.log("get request product Counts table");
+
+    h1 = "select count(*) from product where product_type = 'Machinery'";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request product Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+
+app.get("/product_pesticides_count", (req, res) => {
+    console.log("get request product Counts table");
+
+    h1 = "select count(*) from product where product_type = 'Pesticides'";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request product Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+// schemes table count function 
+
+
+app.get("/schemes_count", (req, res) => {
+    console.log("get request schemes Counts table");
+
+    h1 = "select count(*) from schemes";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request schemes Count table",
+            data: results.rows
+        })
+        // console.log(results);
     })
 })
 
