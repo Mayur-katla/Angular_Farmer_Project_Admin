@@ -47,6 +47,7 @@ import { CropsHomeComponent } from './components/Home/crops-home/crops-home.comp
 import { ProductDetailsComponent } from './components/Details/product-details/product-details.component';
 import { CropsDetailsComponent } from './components/Details/crops-details/crops-details.component';
 import { SchemesContentDetailsComponent } from './components/Schemes/schemes-content-details/schemes-content-details.component';
+import { SchemesHomeComponent } from './components/Home/schemes-home/schemes-home.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,8 @@ import { SchemesContentDetailsComponent } from './components/Schemes/schemes-con
     CropsHomeComponent,
     ProductDetailsComponent,
     CropsDetailsComponent,
-    SchemesContentDetailsComponent
+    SchemesContentDetailsComponent,
+    SchemesHomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 
+
 .major_navbar_content1 {
     /* background-color: darkgreen; */
     width: 100%;
@@ -8,6 +9,7 @@
     top: -10px;
     left: -10px;
     z-index: 10;
+    /* filter: blur(1px); */
     /* opacity: 0.5; */
 }
 
@@ -21,13 +23,22 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     transition-duration: 0.6s;
+    position: relative;
+    top: 20px;
 }
 
 .major_navbar_content1 a:first-child {
-    margin-left: 300px;
+    margin-left: 320px;
 }
 
 .major_navbar_content1 a:hover {
     background-color: white;
     color: darkgreen;
+}
+
+img{
+    position: absolute;
+    z-index: 10;
+    top: -10px;
+    left: 50px;
 }

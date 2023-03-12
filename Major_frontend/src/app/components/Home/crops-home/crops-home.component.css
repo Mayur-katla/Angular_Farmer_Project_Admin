@@ -2,7 +2,7 @@
     position: absolute;
     top: 100%;
     /* padding: 100px; */
-    background-color: #ccc;
+    background-color: #006266;
     width: 100%;
     height: 50%;
 
@@ -11,14 +11,22 @@
     align-items: start;
 }
 
+
 .major_crops_home h1 {
     position: absolute;
-    left: 40%;
-    color: darkgreen;
+    left: 55%;
+    top: 50px;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     margin: 10px 20px;
+}
+
+.major_crops_home form {
+    position: relative;
+    left: 235px;
+    top: 30px;
 }
 
 .major_crops_home input {
@@ -37,7 +45,7 @@
     background-color: darkgreen;
     width: 50%;
     padding: 10px 25px;
-    border: 1px solid darkgreen;
+    border: 1px solid white;
     transition-duration: 0.6s;
     cursor: pointer;
     position: relative;
@@ -47,4 +55,28 @@
 #crop_submit:hover {
     color: darkgreen;
     background-color: white;
+}
+
+.major_crops_home_content {
+    background-color: white;
+    width: 30%;
+
+    position: absolute;
+    left: 140px;
+    top: 50px;
+
+    padding: 20px 30px;
+}
+
+.major_crops_home_content h2 {
+    text-align: center;
+    font-size: 25px;
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.major_crops_home_content p {
+    text-align: center;
+    color: #1B1464;
 }
