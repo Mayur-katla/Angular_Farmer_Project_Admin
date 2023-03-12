@@ -14,6 +14,16 @@ import { NotfoundComponent } from './components/notfound/notfound/notfound.compo
 import { ProductComponent } from './components/product/product/product.component';
 import { ProductContentComponent } from './components/product/product-content/product-content.component';
 import { SchemesComponent } from './components/schemes/schemes/schemes.component';
+import { SeedsDetailsComponent } from './components/product/product_type/seeds-details/seeds-details.component';
+import { FoodsDetailsComponent } from './components/product/product_type/foods-details/foods-details.component';
+import { GrainsDetailsComponent } from './components/product/product_type/grains-details/grains-details.component';
+import { MachineryDetailsComponent } from './components/product/product_type/machinery-details/machinery-details.component';
+import { PesticideDetailsComponent } from './components/product/product_type/pesticide-details/pesticide-details.component';
+import { ProductDetailsComponent } from './components/product/product-details/product-details.component';
+import { RabiDetailsComponent } from './components/crops/crops_type/rabi-details/rabi-details.component';
+import { KharifDetailsComponent } from './components/crops/crops_type/kharif-details/kharif-details.component';
+import { ZaidDetailsComponent } from './components/crops/crops_type/zaid-details/zaid-details.component';
+import { CropsDetailsComponent } from './components/crops/crops-details/crops-details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +36,17 @@ import { SchemesComponent } from './components/schemes/schemes/schemes.component
     NotfoundComponent,
     ProductComponent,
     ProductContentComponent,
-    SchemesComponent
+    SchemesComponent,
+    SeedsDetailsComponent,
+    FoodsDetailsComponent,
+    GrainsDetailsComponent,
+    MachineryDetailsComponent,
+    PesticideDetailsComponent,
+    ProductDetailsComponent,
+    RabiDetailsComponent,
+    KharifDetailsComponent,
+    ZaidDetailsComponent,
+    CropsDetailsComponent
   ],
   imports: [
     BrowserModule,

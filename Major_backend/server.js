@@ -444,7 +444,7 @@ app.get("/single_schemes_details/:id", (req, res) => {
 // count function admin crops, product, schemes
 
 app.get("/crops_count", (req, res) => {
-    console.log("get request Crops Counts table");
+    // console.log("get request Crops Counts table");
 
     h1 = "select count(*) from crop";
 
@@ -459,7 +459,7 @@ app.get("/crops_count", (req, res) => {
 })
 
 app.get("/crops_count_rabi", (req, res) => {
-    console.log("get request Crops Counts table");
+    // console.log("get request Crops Counts table");
 
     h1 = "select count(*) from crop where crop_type = 'Rabi'";
 
@@ -474,7 +474,7 @@ app.get("/crops_count_rabi", (req, res) => {
 })
 
 app.get("/crops_count_kharif", (req, res) => {
-    console.log("get request Crops Counts table");
+    // console.log("get request Crops Counts table");
 
     h1 = "select count(*) from crop where crop_type = 'Kharif'";
 
@@ -489,7 +489,7 @@ app.get("/crops_count_kharif", (req, res) => {
 })
 
 app.get("/crops_count_zaid", (req, res) => {
-    console.log("get request Crops Counts table");
+    // console.log("get request Crops Counts table");
 
     h1 = "select count(*) from crop where crop_type = 'Zaid'";
 
@@ -506,7 +506,7 @@ app.get("/crops_count_zaid", (req, res) => {
 //product Count table count function 
 
 app.get("/product_count", (req, res) => {
-    console.log("get request product Counts table");
+    // console.log("get request product Counts table");
 
     h1 = "select count(*) from product";
 
@@ -522,7 +522,7 @@ app.get("/product_count", (req, res) => {
 
 
 app.get("/product_foods_count", (req, res) => {
-    console.log("get request product Counts table");
+    // console.log("get request product Counts table");
 
     h1 = "select count(*) from product where product_type = 'Foods'";
 
@@ -538,7 +538,7 @@ app.get("/product_foods_count", (req, res) => {
 
 
 app.get("/product_grains_count", (req, res) => {
-    console.log("get request product Counts table");
+    // console.log("get request product Counts table");
 
     h1 = "select count(*) from product where product_type = 'Grains'";
 
@@ -554,7 +554,7 @@ app.get("/product_grains_count", (req, res) => {
 
 
 app.get("/product_seeds_count", (req, res) => {
-    console.log("get request product Counts table");
+    // console.log("get request product Counts table");
 
     h1 = "select count(*) from product where product_type = 'Seeds'";
 
@@ -570,7 +570,7 @@ app.get("/product_seeds_count", (req, res) => {
 
 
 app.get("/product_machinery_count", (req, res) => {
-    console.log("get request product Counts table");
+    // console.log("get request product Counts table");
 
     h1 = "select count(*) from product where product_type = 'Machinery'";
 
@@ -586,7 +586,7 @@ app.get("/product_machinery_count", (req, res) => {
 
 
 app.get("/product_pesticides_count", (req, res) => {
-    console.log("get request product Counts table");
+    // console.log("get request product Counts table");
 
     h1 = "select count(*) from product where product_type = 'Pesticides'";
 
@@ -604,7 +604,7 @@ app.get("/product_pesticides_count", (req, res) => {
 
 
 app.get("/schemes_count", (req, res) => {
-    console.log("get request schemes Counts table");
+    // console.log("get request schemes Counts table");
 
     h1 = "select count(*) from schemes";
 

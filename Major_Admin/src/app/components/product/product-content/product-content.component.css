@@ -5,8 +5,8 @@
 
     width: 80%;
     height: 100%;
-    background-color: lightgreen;
-    background-image: url('../../../../assets/Images/b9.jpg');
+    background-color: greenyellow;
+    background-image: url('../../../../assets/Images/b6.jpg');
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
     position: relative;
     height: 25%;
     width: 12%;
-    background-color: #27ae60;
+    background-color: #30336b;
     text-decoration: none;
     padding: 25px 70px;
     margin: 50px;
