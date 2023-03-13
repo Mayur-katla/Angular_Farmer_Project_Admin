@@ -1,0 +1,27 @@
+<div class="admin_dashboard_agent">
+    <h1>Agent Details</h1>
+    <table border="1">  
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone No</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Description</th>
+            <th>Reference</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let details of agent_details">
+            <td>{{details.id}}</td>
+            <td>{{details.firstname + " " + details.lastname}}</td>
+            <td>{{details.email}}</td>
+            <td>{{details.phonenumber}}</td>
+            <td>{{details.gender}}</td>
+            <td>{{details.address}}</td>
+            <td>{{details.description}}</td>
+            <td>{{details.reference}}</td>
+            <td><button>x</button></td>
+        </tr>
+    </table>
+</div>

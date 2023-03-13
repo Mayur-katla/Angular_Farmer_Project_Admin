@@ -13,6 +13,9 @@ import { CropsFormComponent } from './components/forms/crops-form/crops-form.com
 import { ProductFormComponent } from './components/forms/product-form/product-form.component';
 import { NewsFormComponent } from './components/forms/news-form/news-form.component';
 import { SchemesFormComponent } from './components/forms/schemes-form/schemes-form.component';
+import { LoginComponent } from './components/login/login/login.component';
+import { LoginBackgroundComponent } from './components/login/login-background/login-background.component';
+import { LoginFormComponent } from './components/login/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { SchemesFormComponent } from './components/forms/schemes-form/schemes-fo
     CropsFormComponent,
     ProductFormComponent,
     NewsFormComponent,
-    SchemesFormComponent
+    SchemesFormComponent,
+    LoginComponent,
+    LoginBackgroundComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,

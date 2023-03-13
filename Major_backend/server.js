@@ -618,6 +618,41 @@ app.get("/schemes_count", (req, res) => {
     })
 })
 
+app.get("/agent_form", (req, res) => {
+    h1 = "Select * from agent";
+
+    pool.query(h1, [], (err, results) => {
+        if(err) throw err;
+        res.send({
+            message: "sucess get request in agent form",
+            data: results.rows
+        })
+    })
+})
+
+app.post("/agent_form", (req, res) => {
+    const firstname = req.body.firstname;
+    const lastname = req.body.lastname;
+    const email = req.body.email;
+    const password = req.body.password;
+    const phonenumber = req.body.phonenumber;
+    const gender = req.body.gender;
+    const address = req.body.address;
+    const description = req.body.description;
+    const reference = req.body.reference;
+
+    h1 = "Insert into agent(firstname, lastname, email, password, phonenumber, gender, address, description, reference) values($1, $2, $3, $4, $5, $6, $7, $8, $9)";
+
+    pool.query(h1, [firstname, lastname, email, password, phonenumber, gender, address, description, reference], (err, results) => {
+        if(err) throw err;
+        res.send({
+            message:"post request success in agent form",
+            data: results
+        })
+    })
+})
+
+
 app.listen(1000, (err) => {
     if (err) throw err;
 

@@ -24,6 +24,7 @@ import { RabiDetailsComponent } from './components/crops/crops_type/rabi-details
 import { KharifDetailsComponent } from './components/crops/crops_type/kharif-details/kharif-details.component';
 import { ZaidDetailsComponent } from './components/crops/crops_type/zaid-details/zaid-details.component';
 import { CropsDetailsComponent } from './components/crops/crops-details/crops-details.component';
+import { DashboardAgentComponent } from './components/Dashboard/dashboard-agent/dashboard-agent.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { CropsDetailsComponent } from './components/crops/crops-details/crops-de
     RabiDetailsComponent,
     KharifDetailsComponent,
     ZaidDetailsComponent,
-    CropsDetailsComponent
+    CropsDetailsComponent,
+    DashboardAgentComponent
   ],
   imports: [
     BrowserModule,
