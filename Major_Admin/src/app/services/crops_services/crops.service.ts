@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CropsService implements OnInit {
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   crops_count = "http://localhost:1000/crops_count";
   crops_count_rabi = "http://localhost:1000/crops_count_rabi";
@@ -14,35 +14,51 @@ export class CropsService implements OnInit {
   crops_count_zaid = "http://localhost:1000/crops_count_zaid";
   product_count = "http://localhost:1000/product_count";
 
+  rabi_url = "http://localhost:1000/rabi_links";
+  kharif_url = "http://localhost:1000/kharif_links";
+  zaid_url = "http://localhost:1000/zaid_links";
+
   schemes_count = "http://localhost:1000/schemes_count";
 
   //crops Counts 
 
-  getCropsCount():Observable<any> {
+  getCropsCount(): Observable<any> {
     return this.http.get(`${this.crops_count}`);
   }
 
-  getCropsCountRabi():Observable<any> {
+  getCropsCountRabi(): Observable<any> {
     return this.http.get(`${this.crops_count_rabi}`);
   }
-  getCropsCountKharif():Observable<any> {
+  getCropsCountKharif(): Observable<any> {
     return this.http.get(`${this.crops_count_kharif}`);
   }
-  getCropsCountZaid():Observable<any> {
+  getCropsCountZaid(): Observable<any> {
     return this.http.get(`${this.crops_count_zaid}`);
   }
 
+  getCropsRabiDetails(): Observable<any> {
+    return this.http.get(`${this.rabi_url}`);
+  }
+
+  getCropsKharifDetails(): Observable<any> {
+    return this.http.get(`${this.kharif_url}`);
+  }
+
+  getCropsZaidDetails(): Observable<any> {
+    return this.http.get(`${this.zaid_url}`);
+  }
   //product Count 
 
-  getProductCount():Observable<any> {
+  getProductCount(): Observable<any> {
     return this.http.get(`${this.product_count}`);
   }
 
   // Schemes count
 
-  getSchemesCount():Observable<any> {
+  getSchemesCount(): Observable<any> {
     return this.http.get(`${this.schemes_count}`);
   }
+
 
   ngOnInit(): void {
 

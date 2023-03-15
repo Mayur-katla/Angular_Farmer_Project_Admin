@@ -1,4 +1,27 @@
 <app-dashboard-sidebar></app-dashboard-sidebar>
-<div class="major_product_grains_details">
 
+<div class="major_product_grains_details">
+    <h1>Grains Details</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let details of grains_details">
+                <td>{{details.id}}</td>
+                <td>{{details.product_name}}</td>
+                <td>{{details.product_brand}}</td>
+                <td>{{details.product_price}}</td>
+                <td>{{details.product_description}}</td>
+                <td><button class="btn btn-danger" (click)="onDelete(details.product_name)">X</button></td>
+            </tr>
+        </tbody>
+    </table>
 </div>

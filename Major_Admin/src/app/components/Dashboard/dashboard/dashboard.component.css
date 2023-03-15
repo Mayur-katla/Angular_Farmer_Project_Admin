@@ -1,5 +1,6 @@
 .admin_dashboard h1{
     position: absolute;
+    top: 4%;
     left: 24.4%;
     z-index: 10;
     color: #006266;

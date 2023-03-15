@@ -216,7 +216,7 @@ app.get("/crops_rabi", (req, res) => {
 app.get("/rabi_links", (req, res) => {
     // console.log("get request crops rabi_links table");
 
-    h1 = "select name from crop where crop_type='Rabi'";
+    h1 = "select * from crop where crop_type='Rabi'";
 
     pool.query(h1, [], (err, results) => {
         if (err) throw err;
@@ -231,7 +231,7 @@ app.get("/rabi_links", (req, res) => {
 app.get("/kharif_links", (req, res) => {
     // console.log("get request crops kharif_links table");
 
-    h1 = "select name from crop where crop_type='Kharif'";
+    h1 = "select * from crop where crop_type='Kharif'";
 
     pool.query(h1, [], (err, results) => {
         if (err) throw err;
@@ -246,7 +246,7 @@ app.get("/kharif_links", (req, res) => {
 app.get("/zaid_links", (req, res) => {
     // console.log("get request crops zaid_links table");
 
-    h1 = "select name from crop where crop_type='Zaid'";
+    h1 = "select * from crop where crop_type='Zaid'";
 
     pool.query(h1, [], (err, results) => {
         if (err) throw err;

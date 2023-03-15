@@ -1,1 +1,37 @@
-<p>kharif-details works!</p>
+<app-dashboard-sidebar></app-dashboard-sidebar>
+
+<div class="admin_crops_kharif">
+    <h1>Kharif Crops Details</h1>
+    <div class="admin_crops_kharif_content">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">About</th>
+                    <th scope="col">Climate</th>
+                    <th scope="col">History</th>
+                    <th scope="col">Soil</th>
+                    <th scope="col">Nutrition</th>
+                    <th scope="col">Fertilizer</th>
+                    <th scope="col">Commercial</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let details of kharif_details">
+                    <td>{{details.id}}</td>
+                    <td>{{details.name}}</td>
+                    <td>{{details.about}}</td>
+                    <td>{{details.climate}}</td>
+                    <td>{{details.history}}</td>
+                    <td>{{details.soil}}</td>
+                    <td>{{details.nutrition}}</td>
+                    <td>{{details.fertilizer}}</td>
+                    <td>{{details.commercial}}</td>
+                    <td><button class="btn btn-danger">x</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

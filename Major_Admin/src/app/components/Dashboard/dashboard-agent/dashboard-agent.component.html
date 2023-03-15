@@ -1,6 +1,6 @@
 <div class="admin_dashboard_agent">
     <h1>Agent Details</h1>
-    <table border="1">  
+    <!-- <table class="table table-bordered">  
         <tr>
             <th>No.</th>
             <th>Name</th>
@@ -21,7 +21,36 @@
             <td>{{details.address}}</td>
             <td>{{details.description}}</td>
             <td>{{details.reference}}</td>
-            <td><button>x</button></td>
+            <td><button class="btn btn-danger">X</button></td>
         </tr>
+    </table> -->
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone No</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Address</th>
+                <th scope="col">Description</th>
+                <th scope="col">Reference</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let details of agent_details">
+                <td>{{details.id}}</td>
+                <td>{{details.firstname + " " + details.lastname}}</td>
+                <td>{{details.email}}</td>
+                <td>{{details.phonenumber}}</td>
+                <td>{{details.gender}}</td>
+                <td>{{details.address}}</td>
+                <td>{{details.description}}</td>
+                <td>{{details.reference}}</td>
+                <td><button class="btn btn-danger">X</button></td>
+            </tr>
+        </tbody>
     </table>
 </div>

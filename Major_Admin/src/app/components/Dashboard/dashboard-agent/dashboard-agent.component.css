@@ -1,3 +1,5 @@
+@import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 .admin_dashboard_agent {
     position: absolute;
     left: 24.6%;
