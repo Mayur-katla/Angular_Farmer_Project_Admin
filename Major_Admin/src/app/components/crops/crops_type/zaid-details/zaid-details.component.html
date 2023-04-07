@@ -29,7 +29,7 @@
                     <td>{{details.nutrition}}</td>
                     <td>{{details.fertilizer}}</td>
                     <td>{{details.commercial}}</td>
-                    <td><button class="btn btn-danger">x</button></td>
+                    <td><button class="btn btn-danger" (click)="onDeleteCrops(details.name)">x</button></td>
                 </tr>
             </tbody>
         </table>

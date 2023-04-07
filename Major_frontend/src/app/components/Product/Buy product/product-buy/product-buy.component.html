@@ -1,0 +1,13 @@
+<div class="major_product_buy">
+    <app-navbar></app-navbar>
+    <app-product-sidebar></app-product-sidebar>
+    <div class="major_product_buy_content" *ngFor="let details of product_details">
+        <img src="../../../../../assets/Images/product_image/p1.png" width="350" height="290" alt="">
+        <h1>{{details.product_name}}</h1>
+        <p>Brand : <b>{{details.product_brand}}</b></p>
+        <p>{{details.product_description}}</p>
+        <div class="major_product_buy_content_footer">
+            <p>₹{{details.product_price}}<button [routerLink]="['/Product_Order/',details.product_name]">Order Now</button></p>
+        </div>
+    </div>
+</div>  

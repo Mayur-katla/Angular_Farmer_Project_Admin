@@ -275,6 +275,39 @@ app.get("/Crops_details/:name", (req, res) => {
     })
 })
 
+// product Buy 
+
+app.get("/product_buy/:product_name", (req, res) => {
+    // console.log("name => ", req.params.name);
+
+    const product_name = req.params.product_name;
+    h1 = "select * from product where product_name = $1";
+    pool.query(h1, [product_name], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "Success get single data request in crops details",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
+// product order
+app.get("/product_order/:product_name", (req, res) => {
+    // console.log("name => ", req.params.name);
+
+    const product_name = req.params.product_name;
+    h1 = "select * from product where product_name = $1";
+    pool.query(h1, [product_name], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "Success get single data request in crops details",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
 // crop Delete Details .
 app.delete("/delete_crops_details/:name", (req, res) => {
     // console.log("name => ", req.params.name);
@@ -286,6 +319,23 @@ app.delete("/delete_crops_details/:name", (req, res) => {
         if (err) throw err;
         res.send({
             message: "Success delete in crop details",
+            data: results.rows
+        })
+        console.log(results.rows);
+    })
+})
+
+// schemes delete details
+
+app.delete("/delete_schemes_details/:name", (req, res) => {
+    const name = req.params.name;
+
+    h1 = "Delete from schemes details where name = $1";
+
+    pool.query(h1, [name], (err, results) =>{
+        if (err) throw err;
+        res.send({
+            message: "Success delete in schemes details",
             data: results.rows
         })
         console.log(results.rows);

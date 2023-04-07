@@ -18,6 +18,8 @@ export class ProductService {
   product_machinery_url = "http://localhost:1000/product_machinery";
   product_pesticides_url = "http://localhost:1000/product_pesticides";
   product_single_details = "http://localhost:1000/product_details";
+  product_buy = "http://localhost:1000/product_buy";
+  product_order = "http://localhost:1000/product_order";
 
   // all details from product table
 
@@ -58,5 +60,13 @@ export class ProductService {
   getSingleProductDetails(data:any):Observable<any> {
     // let single1 = single_product
     return this.http.delete(`${this.product_single_details}/${data}`)
+  }
+
+  getProductBuy(data:any):Observable<any> {
+    return this.http.get(`${this.product_buy}/${data}`);
+  }
+
+  getProductOrder(data:any):Observable<any> {
+    return this.http.get(`${this.product_order}/${data}`);
   }
 }

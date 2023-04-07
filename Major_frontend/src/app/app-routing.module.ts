@@ -23,6 +23,8 @@ import { SchemesContentDetailsComponent } from './components/Schemes/schemes-con
 import { SchemesFormComponent } from './components/Schemes/schemes-form/schemes-form.component';
 import { SchemesComponent } from './components/Schemes/schemes/schemes.component';
 import { TestingComponent } from './components/Testing/testing/testing.component';
+import { ProductBuyComponent } from './components/Product/Buy product/product-buy/product-buy.component';
+import { ProductOrderComponent } from './components/Product/Buy product/product-order/product-order.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -39,6 +41,8 @@ const routes: Routes = [
   { path: "Crops_form", component: CropsFormComponent },
   { path: "Crops_details/:name", component: SingleCropsComponent },
   { path: "Schemes_details/:id", component: SchemesContentDetailsComponent },
+  { path: "Product_buy/:product_name", component: ProductBuyComponent},
+  { path: "Product_Order/:product_name", component: ProductOrderComponent},
   { path: "Testing", component: TestingComponent },
   { path: "Climate", component: ClimateComponent },
   { path: "Schemes", component: SchemesComponent },

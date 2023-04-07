@@ -7,7 +7,7 @@
     </div> -->
 
     <div class="major_product_content_main">
-        <a href="" *ngFor="let details of product_details">
+        <a [routerLink]="['/Product_buy/',details.product_name]" *ngFor="let details of product_details">
             <img src="../../../../assets/Images/product_image/p2.png" alt="product_image" width="150" height="120">
             <h3>{{details.product_name}}</h3>
             <b>{{"$"+details.product_price}}</b>

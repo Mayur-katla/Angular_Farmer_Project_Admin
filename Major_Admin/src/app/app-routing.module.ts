@@ -12,11 +12,13 @@ import { PesticideDetailsComponent } from './components/product/product_type/pes
 import { RabiDetailsComponent } from './components/crops/crops_type/rabi-details/rabi-details.component';
 import { KharifDetailsComponent } from './components/crops/crops_type/kharif-details/kharif-details.component';
 import { ZaidDetailsComponent } from './components/crops/crops_type/zaid-details/zaid-details.component';
+import { SchemesComponent } from './components/schemes/schemes/schemes.component';
 
 const routes: Routes = [
   { path: "", component: DashboardComponent },
   { path: "crops_content", component: CropsComponent },
   { path: "product_content", component: ProductComponent },
+  { path: "schemes_content", component: SchemesComponent },
   { path: "product/seeds_details", component: SeedsDetailsComponent},
   { path: "product/foods_details", component: FoodsDetailsComponent},
   { path: "product/machinery_details", component: MachineryDetailsComponent},

@@ -1,1 +1,23 @@
-<p>schemes works!</p>
+<app-dashboard-sidebar></app-dashboard-sidebar>
+
+<div class="major_schemes_details">
+    <h1>Schemes Details</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let details of schemes_details">
+                <td>{{details.id}}</td>
+                <td>{{details.name}}</td>
+                <td>{{details.description}}</td>
+                <td><button class="btn btn-danger" (click)="onDeleteSchemes(details.name)">X</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

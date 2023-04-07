@@ -6,7 +6,3 @@ https://www.bezkoder.com/angular-12-jwt-auth/ => angular authetication.
 https://bezkoder.com/node-js-jwt-authentication-postgresql/ => nodejs and postgressql authetication.
 https://pib.gov.in/Pressreleaseshare.aspx?PRID=1496069#:~:text=The%20Government%20has%20rolled%20out,PMFBY)%20and%20Interest%20Subvention%20Scheme. => schemse Details
 
-"username": "Mayur",
-"email" : "M123@gmail.com",
-"password": "12345678",
-"roles": ["users", "moderator"]

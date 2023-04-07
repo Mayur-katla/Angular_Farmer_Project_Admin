@@ -10,6 +10,13 @@ export class RabiDetailsComponent implements OnInit {
   rabi_details: any;
   constructor(private crops:CropsService){}
 
+  onDeleteCrops(crops:any){
+    this.crops.deleteCropDetails(crops).subscribe((details) => {
+      console.log(details.data);      
+    })
+    alert("SuccessFully Deleted Crops...");
+  }
+
   ngOnInit(): void {
     this.crops.getCropsRabiDetails().subscribe((details) => {
       this.rabi_details = details.data;

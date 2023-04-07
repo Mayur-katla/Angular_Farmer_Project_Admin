@@ -19,6 +19,10 @@ export class CropsService implements OnInit {
   zaid_url = "http://localhost:1000/zaid_links";
 
   schemes_count = "http://localhost:1000/schemes_count";
+  schemes = "http://localhost:1000/schemes";
+  delete_schemes = "http://localhost:1000/delete_schemes_details";
+
+  delete_crops = "http://localhost:1000/delete_crops_details";
 
   //crops Counts 
 
@@ -59,6 +63,17 @@ export class CropsService implements OnInit {
     return this.http.get(`${this.schemes_count}`);
   }
 
+  getSchemes(): Observable<any> {
+    return this.http.get(`${this.schemes}`);
+  }
+
+  deleteCropDetails(single_crop:any):Observable<any> {
+    return this.http.delete(`${this.delete_crops}/${single_crop}`);
+  }
+
+  deleteSchemesDetails(schemes:any):Observable<any> {
+    return this.http.delete(`${this.delete_schemes}/${schemes}`);
+  }
 
   ngOnInit(): void {
 
