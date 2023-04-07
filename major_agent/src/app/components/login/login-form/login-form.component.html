@@ -1,14 +1,15 @@
 <div class="major_login_form">
-    <form action="" method="post" enctype="multipart/form-data" [formGroup]="userValidationAgent" (ngSubmit)="onSubmitAgent()">
-        <input type="text" name="firstname" id="firstname" formControlName="firstname"  placeholder="Your First Name">
+    <h1>Register Here</h1>
+    <form action="" method="post" class="form-group" enctype="multipart/form-data" [formGroup]="userValidationAgent" (ngSubmit)="onSubmitAgent()">
+        <input type="text" name="firstname" class="form-control" id="firstname" formControlName="firstname"  placeholder="Your First Name">
         <br>
-        <input type="text" name="lastname" id="lastname" formControlName="lastname" placeholder="Your Last Name">
+        <input type="text" name="lastname" class="form-control" id="lastname" formControlName="lastname" placeholder="Your Last Name">
         <br>
-        <input type="email" name="email" id="email" formControlName="email" placeholder="Your Email">
+        <input type="email" name="email" class="form-control" id="email" formControlName="email" placeholder="Your Email">
         <br>
-        <input type="password" name="password" id="password" formControlName="password" placeholder="Your Password">
+        <input type="password" name="password" class="form-control" id="password" formControlName="password" placeholder="Your Password">
         <br>
-        <input type="text" name="phonenumber" id="phonenumber" formControlName="phonenumber" placeholder="Your Phone No">
+        <input type="text" name="phonenumber" class="form-control" id="phonenumber" formControlName="phonenumber" placeholder="Your Phone No">
         <br>
         <label for="">Gender</label>
         <br>    
@@ -16,19 +17,19 @@
         <br>
         <input type="radio" name="gender" value="female" id="female" formControlName="gender"><label for="">Female</label>
         <br>
-        <textarea name="address" id="address" cols="30" rows="5" formControlName="address" placeholder="Your Address"></textarea>
+        <textarea name="address" id="address" class="form-control" cols="30" rows="5" formControlName="address" placeholder="Your Address"></textarea>
         <br>
-        <textarea name="description" id="description" cols="30" rows="5" formControlName="description" placeholder="Your Description"></textarea>
+        <textarea name="description" id="description" class="form-control" cols="30" rows="5" formControlName="description" placeholder="Your Description"></textarea>
         <br>
         <label for="">Where did you find us?</label>
         <br>
-        <select name="reference" id="reference" formControlName="reference">
+        <select name="reference" class="form-control" id="reference" formControlName="reference">
             <option value="Youtube">Youtube</option>
             <option value="Facebook">Facebook</option>
             <option value="Instagram">Instagram</option>
             <option value="Google">Google</option>
             <option value="Others">Others</option>
         </select>
-        <input type="submit" name="submit" id="submit">
+        <input type="submit" name="submit" class="login_main" id="submit">
     </form>
 </div>

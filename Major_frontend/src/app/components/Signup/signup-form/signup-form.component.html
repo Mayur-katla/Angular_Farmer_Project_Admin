@@ -1,0 +1,25 @@
+<div class="major_signup_form">
+    <h1>Registration Here</h1>
+    <form action="" class="form-group" method="post" (ngSubmit)="onSignup()" enctype="multipart/form-data" [formGroup]="userValidationSignup" >
+        <input type="text" class="form-control" name="fullName" id="fullName" placeholder="Enter Full Name" formControlName="fullname">
+        <br>
+        <input type="text" name="mobileno" class="form-control" id="mobileno" formControlName="mobileno" placeholder="Enter Mobile No">
+        <br>
+        <label for="">Gender</label>
+        <br>
+        <input type="radio" class="form-check-input gender_main" id="gender" name="gender" value="Male" formControlName="gender">
+        <label>Male</label><br>
+        <input type="radio" class="form-check-input gender_main" id="gender" name="gender" value="Female" formControlName="gender">
+        <label>Female</label><br>
+        <br>
+        <input type="email" name="email" class="form-control" id="email" formControlName="email" placeholder="Enter Email">
+        <br>
+        <input type="password" name="password" class="form-control" id="password" formControlName="password" placeholder="Enter Password">
+        <br>
+        <textarea name="address" class="form-control" id="address" cols="30" rows="5" formControlName="address" placeholder="Enter Address"></textarea>
+        <br>
+        <input type="text" name="pincode" class="form-control" id="pincode" formControlName="pincode" placeholder="Enter Pincode">
+        <br>
+        <input type="submit" name="submit" class="form-control submit_signup" id="submit" value="Register">
+    </form>
+</div>

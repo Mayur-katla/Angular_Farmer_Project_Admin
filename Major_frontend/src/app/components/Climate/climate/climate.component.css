@@ -1,0 +1,50 @@
+.major_climate_main {
+    position: absolute;
+}
+
+.major_climate_form {
+    margin: 30px 500px;
+}
+
+.major_climate_form input{
+    width: 100%;
+    padding: 10px 130px;
+    padding-left: 10px;
+}
+
+.major_climate_Content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    top: 50px;
+    margin: 20px 50px;
+    align-items: center;
+}
+
+.major_climate_Content div{
+    margin: 50px 50px;
+    background-color: white;
+    padding: 50px 50px;
+    width: 10%;
+    text-align: center;
+}
+
+.major_climate_Content p {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: darkgreen;
+    text-align: center;
+}
+
+.major_climate_Content b {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    /* position: relative;
+    left: -10px; */
+    text-align: center;
+}

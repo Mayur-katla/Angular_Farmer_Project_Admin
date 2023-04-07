@@ -1,0 +1,18 @@
+.major_signup_background {
+    /* background-color: #0fbcf9; */
+    background-color: #34ace0;
+    background-image: url('../../../../assets/Images/signup.jpg');
+    background-position: center;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-blend-mode: darken; */
+
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

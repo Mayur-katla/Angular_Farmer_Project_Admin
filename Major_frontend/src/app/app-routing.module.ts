@@ -25,6 +25,7 @@ import { SchemesComponent } from './components/Schemes/schemes/schemes.component
 import { TestingComponent } from './components/Testing/testing/testing.component';
 import { ProductBuyComponent } from './components/Product/Buy product/product-buy/product-buy.component';
 import { ProductOrderComponent } from './components/Product/Buy product/product-order/product-order.component';
+import { SignupComponent } from './components/Signup/signup/signup.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -49,6 +50,7 @@ const routes: Routes = [
   { path: "Schemes_form", component: SchemesFormComponent },
   { path: "News", component: NewsComponent },
   { path: "Login", component: LoginComponent },
+  { path: "Signup", component: SignupComponent},
   { path: "Product_Details", component: ProductDetailsComponent },
   { path: "Crops_Contents", component: CropsDetailsComponent },
   // {path: "Product_Details/:product_name", component: ProductDetailsComponent},

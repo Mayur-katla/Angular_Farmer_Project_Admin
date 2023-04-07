@@ -1,0 +1,62 @@
+@import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.major_login_form {
+    position: absolute;
+    background-color: white;
+    padding: 20px 50px;
+    top: 10%;
+    right: 10%;
+    width: 35%;
+}
+
+.login_main {
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    padding: 10px 20px !important;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+.login_main:hover{
+    color: green;
+    background-color: white;
+    transition-duration: 0.5s !important;
+}
+
+.major_login_form h1 {
+    color: darkgreen;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin: 20px;
+}
+
+.major_login_form input {
+    padding: 10px 100px;
+    padding-left: 10px;
+    margin: 7px;
+    border: 1px solid green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.major_login_form textarea {
+    padding: 10px 100px;
+    padding-left: 10px;
+    margin: 7px;
+    border: 1px solid green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.major_login_form label {
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 5px;
+    margin-left: 0;
+}
+
+.gender_main {
+    padding: 0px !important;
+}

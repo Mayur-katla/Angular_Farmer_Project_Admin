@@ -29,6 +29,7 @@ export class LoginFormComponent implements OnInit {
         console.log(details.data);        
       })
     }
+    this.agent.signup(this.userValidationAgent.value.email, this.userValidationAgent.value.password);
   }
 
   ngOnInit(): void {

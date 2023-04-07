@@ -16,6 +16,8 @@ import { SchemesFormComponent } from './components/forms/schemes-form/schemes-fo
 import { LoginComponent } from './components/login/login/login.component';
 import { LoginBackgroundComponent } from './components/login/login-background/login-background.component';
 import { LoginFormComponent } from './components/login/login-form/login-form.component';
+import { SignupComponent } from './components/signup/signup/signup.component';
+import { SignupFormComponent } from './components/signup/signup-form/signup-form.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { LoginFormComponent } from './components/login/login-form/login-form.com
     SchemesFormComponent,
     LoginComponent,
     LoginBackgroundComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    SignupComponent,
+    SignupFormComponent
   ],
   imports: [
     BrowserModule,

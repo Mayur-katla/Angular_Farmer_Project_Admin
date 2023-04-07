@@ -50,6 +50,9 @@ import { SchemesContentDetailsComponent } from './components/Schemes/schemes-con
 import { SchemesHomeComponent } from './components/Home/schemes-home/schemes-home.component';
 import { ProductBuyComponent } from './components/Product/Buy product/product-buy/product-buy.component';
 import { ProductOrderComponent } from './components/Product/Buy product/product-order/product-order.component';
+import { SignupComponent } from './components/Signup/signup/signup.component';
+import { SignupBackgroundComponent } from './components/Signup/signup-background/signup-background.component';
+import { SignupFormComponent } from './components/Signup/signup-form/signup-form.component';
 
 @NgModule({
   declarations: [
@@ -95,7 +98,10 @@ import { ProductOrderComponent } from './components/Product/Buy product/product-
     SchemesContentDetailsComponent,
     SchemesHomeComponent,
     ProductBuyComponent,
-    ProductOrderComponent
+    ProductOrderComponent,
+    SignupComponent,
+    SignupBackgroundComponent,
+    SignupFormComponent
   ],
   imports: [
     BrowserModule,

@@ -702,6 +702,74 @@ app.post("/agent_form", (req, res) => {
     })
 })
 
+//signup register 
+
+app.get("/signup", (req, res) => {
+    h1 = "Select * from signup";
+
+    pool.query(h1, [], (err, results) => {
+        if(err) throw err;
+        res.send({
+            message: "success get request in signup form",
+            data: results.rows
+        })
+    })
+})
+
+
+app.post("/signup", (req, res) => {
+    const fullname = req.body.fullname;
+    const email = req.body.email;
+    const mobileno = req.body.mobileno;
+    const gender = req.body.gender;
+    const address = req.body.address;
+    const password = req.body.password;
+    const pincode = req.body.pincode;
+
+    h1 = "Insert into signup(fullname, mobileno, gender, email, password, address, pincode) values($1, $2, $3, $4, $5, $6, $7)";
+
+    pool.query(h1, [fullname, mobileno, gender, email, password, address, pincode], (err, results) => {
+        if(err) throw err;
+        res.send({
+            message:"post request success in signup form",
+            data: results
+        })
+    })
+})
+
+// order Now
+
+app.get("/orderNow", (req, res) => {
+    h1 = "Select * from orderNow";
+
+    pool.query(h1, [], (err, results) => {
+        if(err) throw err;
+        res.send({
+            message: "success get request in order form",
+            data: results.rows
+        })
+    })
+})
+
+
+app.post("/orderNow", (req, res) => {
+    const fullname = req.body.fullname;
+    const email = req.body.email;
+    const mobileno = req.body.mobileno;
+    const address = req.body.address;
+    const pincode = req.body.pincode;
+    const payment = req.body.payment;
+
+    h1 = "Insert into orderNow(fullname, mobileno, email, address, pincode, payment) values($1, $2, $3, $4, $5, $6)";
+
+    pool.query(h1, [fullname, mobileno, email, address, pincode, payment], (err, results) => {
+        if(err) throw err;
+        res.send({
+            message:"post request success in order form",
+            data: results
+        })
+    })
+})
 
 app.listen(1000, (err) => {
     if (err) throw err;

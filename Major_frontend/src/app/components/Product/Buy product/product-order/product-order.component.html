@@ -1,7 +1,26 @@
 <div class="major_product_order">
     <div class="major_product_order_main">
-        <form action="">
-            
+        <h1>Order Now</h1>
+        <form action="" method="post" class="form-group" enctype="multipart/form-data" [formGroup]="userValidationOrder" (ngSubmit)="onSubmitOrder()">
+            <input type="text" name="fullname" class="form-control" id="fullname" formControlName="fullname"  placeholder="Enter First Name">
+            <br>
+            <input type="email" name="email" class="form-control" id="email" formControlName="email" placeholder="Enter Email">
+            <br>
+            <input type="text" name="phonenumber" class="form-control" id="phonenumber" formControlName="phonenumber" placeholder="Enter Phone No">
+            <br>
+            <textarea name="address" id="address" class="form-control" cols="30" rows="5" formControlName="address" placeholder="Enter Address"></textarea>
+            <br>
+            <input type="text" name="pincode" class="form-control" id="pincode" formControlName="pincode" placeholder="Enter Pincode">
+            <br>
+            <label for="">Payment Method?</label>
+            <br>
+            <select name="payment" class="form-control" id="payment" formControlName="payment">
+                <option value="Youtube">Google Pay</option>
+                <option value="Facebook">Phone pe</option>
+                <option value="Instagram">Paypal</option>
+                <option value="Others">Others</option>
+            </select>
+            <input type="submit" name="submit" class="order_main" id="submit">
         </form>
     </div>
 </div>

@@ -1,5 +1,3 @@
-
-
 .major_navbar_content1 {
     /* background-color: darkgreen; */
     width: 100%;
@@ -27,6 +25,20 @@
     top: 20px;
 }
 
+.major_navbar_content1 b {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 0 10px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    transition-duration: 0.6s;
+    position: relative;
+    top: 20px;
+}
+
 .major_navbar_content1 a:first-child {
     margin-left: 320px;
 }
@@ -41,4 +53,31 @@ img{
     z-index: 10;
     top: -10px;
     left: 50px;
+}
+
+.major_navbar_auth {
+    position: absolute;
+    right: 50px;
+    top: 35px;
+}
+
+.major_navbar_auth a{
+    background-color: green;
+    border: 1px solid green;
+    margin: 0;
+}
+
+.major_navbar_auth a:first-child{
+    padding-right: 10px;
+}
+
+.major_navbar_auth a:last-child{
+    padding-left: 10px;
+}
+
+.major_navbar_auth b{
+    background-color: green;
+    border: 1px solid green;
+    margin: 0;
+    padding: 10px 0;
 }
