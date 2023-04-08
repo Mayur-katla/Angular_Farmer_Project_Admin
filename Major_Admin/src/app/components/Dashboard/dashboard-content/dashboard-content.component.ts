@@ -13,11 +13,12 @@ export class DashboardContentComponent implements OnInit {
   crops_count:any;
   product_count:any;
   schemes_count:any;
+  agent_count:any;
 
   ngOnInit(): void {
     this.crops.getCropsCount().subscribe((details) => {
       this.crops_count = details.data;
-      console.log(details.data);
+      // console.log(details.data);
     })
     this.crops.getProductCount().subscribe((details) => {
       this.product_count = details.data;
@@ -25,5 +26,9 @@ export class DashboardContentComponent implements OnInit {
     this.crops.getSchemesCount().subscribe((details) => {
       this.schemes_count = details.data;
     })
+    this.crops.getAgentCount().subscribe((details) => {
+      this.agent_count = details.data;
+    })
+
   }
 }

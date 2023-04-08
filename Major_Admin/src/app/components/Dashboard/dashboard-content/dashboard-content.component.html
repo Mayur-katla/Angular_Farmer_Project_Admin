@@ -14,10 +14,10 @@
         <p *ngFor="let details of schemes_count">{{details.count}}</p>
         <h2>Schemes</h2>
     </a>
-    <a href="#">
+    <a routerLink="/">
         <!-- <img src="../../../../assets/Images/product_image/j1.png" width="70" height="70" alt=""> -->
-        <p>54</p>
-        <h2>Demo1</h2>
+        <p *ngFor="let details of agent_count">{{details.count}}</p>
+        <h2>Agents</h2>
     </a>
     <!-- <a href="#">
         <img src="../../../../assets/Images/product_image/j1.png" width="80" height="80" alt="">

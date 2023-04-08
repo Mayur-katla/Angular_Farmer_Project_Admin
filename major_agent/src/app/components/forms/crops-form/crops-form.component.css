@@ -1,3 +1,4 @@
+@import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 .major_crops_form {
     position: absolute;
     top: 70px;

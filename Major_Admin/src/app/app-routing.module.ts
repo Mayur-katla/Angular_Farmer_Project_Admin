@@ -13,6 +13,7 @@ import { RabiDetailsComponent } from './components/crops/crops_type/rabi-details
 import { KharifDetailsComponent } from './components/crops/crops_type/kharif-details/kharif-details.component';
 import { ZaidDetailsComponent } from './components/crops/crops_type/zaid-details/zaid-details.component';
 import { SchemesComponent } from './components/schemes/schemes/schemes.component';
+import { CommitContentComponent } from './components/commit/commit-content/commit-content.component';
 
 const routes: Routes = [
   { path: "", component: DashboardComponent },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: "crops/rabi_details", component: RabiDetailsComponent},
   { path: "crops/kharif_details", component: KharifDetailsComponent},
   { path: "crops/zaid_details", component: ZaidDetailsComponent},
+  { path: "commit_content", component: CommitContentComponent },
   { path: "**", component: NotfoundComponent }
 ];
 

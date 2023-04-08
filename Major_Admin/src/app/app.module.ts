@@ -26,6 +26,7 @@ import { KharifDetailsComponent } from './components/crops/crops_type/kharif-det
 import { ZaidDetailsComponent } from './components/crops/crops_type/zaid-details/zaid-details.component';
 import { CropsDetailsComponent } from './components/crops/crops-details/crops-details.component';
 import { DashboardAgentComponent } from './components/Dashboard/dashboard-agent/dashboard-agent.component';
+import { CommitContentComponent } from './components/commit/commit-content/commit-content.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { DashboardAgentComponent } from './components/Dashboard/dashboard-agent/
     KharifDetailsComponent,
     ZaidDetailsComponent,
     CropsDetailsComponent,
-    DashboardAgentComponent
+    DashboardAgentComponent,
+    CommitContentComponent
   ],
   imports: [
     BrowserModule,

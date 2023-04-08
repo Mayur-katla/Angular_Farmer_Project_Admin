@@ -24,6 +24,8 @@ export class CropsService implements OnInit {
 
   delete_crops = "http://localhost:1000/delete_crops_details";
 
+  agent_count = "http://localhost:1000/agent_count";
+
   //crops Counts 
 
   getCropsCount(): Observable<any> {
@@ -65,6 +67,12 @@ export class CropsService implements OnInit {
 
   getSchemes(): Observable<any> {
     return this.http.get(`${this.schemes}`);
+  }
+
+  // Agent count
+
+  getAgentCount(): Observable<any> {
+    return this.http.get(`${this.agent_count}`);
   }
 
   deleteCropDetails(single_crop:any):Observable<any> {

@@ -417,6 +417,21 @@ app.post("/agent_commit", (req, res) => {
     })
 })
 
+app.delete("/commit_delete/:name", (req, res) => {
+    // console.log("name => ", req.params.name);
+
+    const name = req.params.name;
+
+    h1 = "Delete from agent_commit where name = $1";
+    pool.query(h1, [name], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "Success delete in Commit details",
+            data: results.rows
+        })
+        console.log(results.rows);
+    })
+})
 
 app.get("/schemes", (req, res) => {
     console.log("get request schemes table");
@@ -667,6 +682,22 @@ app.get("/schemes_count", (req, res) => {
         // console.log(results);
     })
 })
+
+app.get("/agent_count", (req, res) => {
+    // console.log("get request schemes Counts table");
+
+    h1 = "select count(*) from agent";
+
+    pool.query(h1, [], (err, results) => {
+        if (err) throw err;
+        res.send({
+            message: "sucess get request agent Count table",
+            data: results.rows
+        })
+        // console.log(results);
+    })
+})
+
 
 app.get("/agent_form", (req, res) => {
     h1 = "Select * from agent";

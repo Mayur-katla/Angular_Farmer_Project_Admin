@@ -29,9 +29,9 @@ export class CropsFormComponent {
       this.crops.createCrops(this.cropsValidation.value).subscribe((details) => {
         console.log(details);        
       })
+    alert("Inserted crop successfully..."); 
     }else {
       console.log("Enter all fields...");
-      
     }
   }
 }

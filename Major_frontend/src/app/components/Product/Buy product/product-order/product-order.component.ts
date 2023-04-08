@@ -25,6 +25,7 @@ export class ProductOrderComponent {
       this.order.createorderNow(this.userValidationOrder.value).subscribe((details) => {
         console.log(details.data);        
       })
+      alert("Your Order has been placed successfully...");
     }
   }
 

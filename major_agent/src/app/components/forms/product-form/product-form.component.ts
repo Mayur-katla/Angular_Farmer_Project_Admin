@@ -25,6 +25,7 @@ export class ProductFormComponent implements OnInit{
       this.product.createProduct(this.userProductValidation.value).subscribe((details) => {
         console.log(details);        
       })
+      alert("Inserted product successfully...");
     }
   }
 
